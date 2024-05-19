@@ -1,5 +1,101 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-};
+@import "_mixin.scss";
+@import "_variable.scss";
+
+@include respond-to(2000px){
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    };
+    
+    body{
+        direction: rtl;
+    }
+    
+    .span-div{
+        width: 100%;
+    }
+
+    header{
+        width: 100%;
+        padding: 1.5rem 10rem;
+    }
+    
+    
+    .head{
+        background-color: $bag-light-1;
+        @include display(space-between,center,row);
+
+        //left head .............
+
+        .head-left{
+            @include display(space-between,center,row);
+            gap: 1rem;
+            .enter_program{
+                padding: .8rem 2rem;
+                color: $font-color-head-4;
+                font-size: 16px;
+                font-weight: 600;
+                background-color: $bag-light-2;
+                border-radius: 6px;
+                &:hover{
+                    cursor: pointer;
+                }
+            }
+
+            .them{
+                width: 2.6rem;
+                height: 2.6rem;
+                border: 1px solid $border-color-head1;
+                border-radius: 3px;
+                background-image: url('../images/light-dark.svg');
+                background-repeat: no-repeat;
+                background-size: 1.5rem 1.5rem;
+                background-position: center center;
+                
+                &:hover{
+                    cursor: pointer;
+
+                }
+            }
+
+            .them-selector{
+                @include display(space-between,flex-start,column){
+                    display: none;
+                };
+            }
+        }
+
+
+        //right-head ............
+
+
+
+
+        .head-right{
+            @include display(space-between,center,row);
+            gap : 4.5rem;
+            
+            a{
+                color: $font-color-head-1;
+                text-decoration: none;
+                transition: all .3s ease;
+                font-size: 16px;
+                font-weight: 600;
+                &:hover{
+                    color: #2C7EF8;
+                }
+                &:nth-of-type(1){
+                    color: #2C7EF8;
+                }
+            }
+
+            h2{
+                color: $font-color-head-2;
+                font-size: 20px;
+                font-weight: 600;
+            }
+        }
+    }
+    
+}
