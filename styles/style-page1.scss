@@ -23,21 +23,24 @@
     
     
     .head{
-        background-color: $bag-light-1;
+        background-color: $bag-light-head-1;
+        width: 100%;
         @include display(space-between,center,row);
 
         //left head .............
 
         .head-left{
             @include display(space-between,center,row);
+            position: relative;
             gap: 1rem;
             .enter_program{
                 padding: .8rem 2rem;
                 color: $font-color-head-4;
                 font-size: 16px;
                 font-weight: 600;
-                background-color: $bag-light-2;
+                background-color: $bag-light-head-2;
                 border-radius: 6px;
+                @include display(center,center,row);
                 &:hover{
                     cursor: pointer;
                 }
@@ -52,17 +55,99 @@
                 background-repeat: no-repeat;
                 background-size: 1.5rem 1.5rem;
                 background-position: center center;
-                
+                transition: all .3s ease;
                 &:hover{
                     cursor: pointer;
-
+                    filter: brightness(.1);
                 }
             }
 
-            .them-selector{
+            input[type=checkbox]{
+                display: none;
+
+                &:checked + .them-item{
+                    display: flex;
+                }
+            }
+
+            .them-item{
                 @include display(space-between,flex-start,column){
                     display: none;
                 };
+                width: 100%;
+                padding: 1rem 1.5rem;
+                box-shadow: 0px 12px 24px -6px #1414190F;
+                border: 1px solid $border-color-head2;
+                border-radius: 8px;
+                position: absolute;
+                left: 50%;
+                bottom: 0;
+                transform: translate(-50%,106%);
+
+                input[type=radio]{
+                    display: none;
+                }
+                
+                
+                input[type=radio] + label{
+                    width: 100%;
+                    padding: .8rem 1.8rem;
+                    position: relative;
+                }
+
+
+                label{
+                    &:hover{
+                        cursor: pointer;
+                    };
+                }
+
+
+                input[type=radio]:checked + label::after{
+                    content:"";
+                    position: absolute;
+                    left: 5px;
+                    top: 50%;
+                    transform: translate(0%,-50%);
+                    width: 22px;
+                    height: 22px;
+                    background-image: url('../images/tick-outline.svg');
+                    background-repeat: no-repeat;
+                    background-size: 17px 17px;
+                }
+
+
+
+                input[type=radio] + .system-them::before{
+                    background-image: url('../images/light-dark.svg');
+                }
+
+                input[type=radio] + .light-them::before{
+                    background-image: url('../images/light-outline.svg');
+                }
+
+                input[type=radio] + .dark-them::before{
+                    background-image: url('../images/dark-outline.svg');
+                }
+
+
+                input[type=radio] + label::before{
+                    content:"";
+                    position: absolute;
+                    right: 0;
+                    top: 50%;
+                    transform: translate(0%,-50%);
+                    width: 22px;
+                    height: 22px;
+                    background-repeat: no-repeat;
+                    background-size: 22px 22px;
+                }
+
+                .hr-div{
+                    width: 100%;
+                    height: 1px;
+                    background-color: $dive-hr-color-head; 
+                }
             }
         }
 
@@ -83,10 +168,10 @@
                 font-size: 16px;
                 font-weight: 600;
                 &:hover{
-                    color: #2C7EF8;
+                    color: $hover-head-color1;
                 }
                 &:nth-of-type(1){
-                    color: #2C7EF8;
+                    color: $font-color-head-3;
                 }
             }
 
@@ -94,6 +179,7 @@
                 color: $font-color-head-2;
                 font-size: 20px;
                 font-weight: 600;
+
             }
         }
     }

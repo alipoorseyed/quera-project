@@ -1,30 +1,38 @@
 <!DOCTYPE html>
 <html lang="fa-IR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>quera project</title>
-    <link rel="stylesheet" href="./styles/style-page1.css">
-</head>
-<body>
+    <link rel="stylesheet" href="./styles/style-page1.css" />
+  </head>
+  <body>
     <div class="span-div">
-        <header>
-            <div class="head">
-                <div class="head-right">
-                    <h2>کوئرا لیست</h2>
-                    <a href="#">صفحه اصلی</a>
-                    <a href="#">درباره ما</a>
-                    <a href="#">ارتباط با ما</a>
-                </div>
-                <div class="head-left">
-                    <div class="enter_program">
-                        ورود به اپلیکیشن
-                    </div>
-                    <div class="them"></div>
-                    <div class="them-selector"></div>
-                </div>
+      <header>
+        <div class="head">
+          <div class="head-right">
+            <h2>کوئرا لیست</h2>
+            <a href="#">صفحه اصلی</a>
+            <a href="#">درباره ما</a>
+            <a href="#">ارتباط با ما</a>
+          </div>
+          <div class="head-left">
+            <div class="enter_program">ورود به اپلیکیشن</div>
+            <label for="them-selector" class="them"></label>
+            <input type="checkbox" name="chk1" id="them-selector" />
+            <div class="them-item">
+              <input type="radio" name="theme-select-input" id="light" />
+              <label class="light-them" for="light">حالت روشن</label>
+              <div class="hr-div"></div>
+              <input type="radio" name="theme-select-input" id="dark" />
+              <label class="dark-them" for="dark">حالت تاریک</label>
+              <div class="hr-div"></div>
+              <input checked type="radio" name="theme-select-input" id="system" />
+              <label class="system-them" for="system">پیروی از دستگاه</label>
             </div>
-        </header>
+          </div>
+        </div>
+      </header>
     </div>
-</body>
+  </body>
 </html>
