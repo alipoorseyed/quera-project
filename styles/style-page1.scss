@@ -200,6 +200,10 @@
 
     //main ...........
 
+
+
+    //main1-1 ...............
+
     main{
         padding: 0 10rem ;
         background: linear-gradient(180deg, #EBF3FF -7.33%, #FFFFFF 76.21%);
@@ -208,7 +212,7 @@
 
     .main-1{
         @include display(space-between,center,column);
-        padding: 6rem 8rem;
+        padding: 6rem 8rem 3rem 8rem;
         gap: 1.5rem;
         h3:nth-of-type(1){
             font-size: 46px;
@@ -223,7 +227,9 @@
         .vectorr{
             position: relative;
             top: -1rem;
-            padding-bottom: 1rem;
+            padding-bottom: .5rem;
+            width: 13rem;
+            height: auto;
         }
 
 
@@ -240,7 +246,6 @@
             padding-top: .5rem;
 
             .main-1-enter{
-                // padding: .8rem 2rem;
                 width: 10rem;
                 height: 3rem;
                 @include display(center,center,row);
@@ -252,7 +257,6 @@
             }
 
             .main-1-aboutus{
-                // padding: .8rem 3.2rem;
                 width: 10rem;
                 height: 3rem;
                 @include display(center,center,row);
@@ -265,6 +269,53 @@
         }
     }
 
-    
+
+
+    //main1-2 ..............
+
+    .main-1 + img{
+        width: 100%;
+        height: auto;
+    }
+
+
+
+
+
+
+    //main1-3 ............
+
+
+    .property{
+        @include display(space-between,center,column);
+        width: 100%;
+        gap: 1.5rem;
+
+        .property-def{
+            @include display(space-between,center,column);
+            gap: 1.5rem;
+            width: 50%;
+            h3{
+                font-weight: 600;
+                font-size: 40px;
+            }
+
+            p{
+                width: 80%;
+                font-weight: 600;
+                font-size: 18px;
+                text-align: center;
+            }
+        }
+
+
+        .property-list{
+            width: 100%;
+            @include display(space-between,center,row);
+            
+        }
+
+
+    }
     
 }

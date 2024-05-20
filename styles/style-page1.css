@@ -165,7 +165,7 @@
     justify-content: space-between;
     align-items: center;
     flex-direction: column;
-    padding: 6rem 8rem;
+    padding: 6rem 8rem 3rem 8rem;
     gap: 1.5rem;
   }
   .main-1 h3:nth-of-type(1) {
@@ -179,7 +179,9 @@
   .main-1 .vectorr {
     position: relative;
     top: -1rem;
-    padding-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    width: 13rem;
+    height: auto;
   }
   .main-1 p {
     text-align: center;
@@ -220,5 +222,42 @@
     border-radius: 8px;
     font-weight: 600;
     font-size: 16px;
+  }
+  .main-1 + img {
+    width: 100%;
+    height: auto;
+  }
+  .property {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    gap: 1.5rem;
+  }
+  .property .property-def {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    gap: 1.5rem;
+    width: 50%;
+  }
+  .property .property-def h3 {
+    font-weight: 600;
+    font-size: 40px;
+  }
+  .property .property-def p {
+    width: 80%;
+    font-weight: 600;
+    font-size: 18px;
+    text-align: center;
+  }
+  .property .property-list {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
   }
 }/*# sourceMappingURL=style-page1.css.map */
