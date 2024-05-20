@@ -16,9 +16,18 @@
         width: 100%;
     }
 
+
+
+
+
+     //header ................
+
+
+
+
     header{
         width: 100%;
-        padding: 1.5rem 10rem;
+        padding: 1.5rem 6.5rem;
     }
     
     
@@ -74,6 +83,7 @@
                 @include display(space-between,flex-start,column){
                     display: none;
                 };
+                background-color: white;
                 width: 100%;
                 padding: 1rem 1.5rem;
                 box-shadow: 0px 12px 24px -6px #1414190F;
@@ -155,8 +165,6 @@
         //right-head ............
 
 
-
-
         .head-right{
             @include display(space-between,center,row);
             gap : 4.5rem;
@@ -183,5 +191,80 @@
             }
         }
     }
+
+
+
+
+
+
+
+    //main ...........
+
+    main{
+        padding: 0 10rem ;
+        background: linear-gradient(180deg, #EBF3FF -7.33%, #FFFFFF 76.21%);
+    }
+
+
+    .main-1{
+        @include display(space-between,center,column);
+        padding: 6rem 8rem;
+        gap: 1.5rem;
+        h3:nth-of-type(1){
+            font-size: 46px;
+            font-weight: 400;
+        }
+
+        h3:nth-of-type(2){
+            font-size: 64px;
+            font-weight: 900;
+        }
+         
+        .vectorr{
+            position: relative;
+            top: -1rem;
+            padding-bottom: 1rem;
+        }
+
+
+        p{
+            text-align: center;
+            width: 80%;
+            font-weight: 400;
+            font-size: 20px;
+        }
+
+        .main-1-ea{
+            @include display(space-between,center,row);
+            gap: 1rem;
+            padding-top: .5rem;
+
+            .main-1-enter{
+                // padding: .8rem 2rem;
+                width: 10rem;
+                height: 3rem;
+                @include display(center,center,row);
+                background-color: $bag-light-main-1;
+                border-radius: 8px;
+                color: $font-color-main-1;
+                font-weight: 600;
+                font-size: 16px;
+            }
+
+            .main-1-aboutus{
+                // padding: .8rem 3.2rem;
+                width: 10rem;
+                height: 3rem;
+                @include display(center,center,row);
+                background-color: $bag-light-main-2;
+                color: $font-color-main-2;
+                border-radius: 8px;
+                font-weight: 600;
+                font-size: 16px;
+            }
+        }
+    }
+
+    
     
 }

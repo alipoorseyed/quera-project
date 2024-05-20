@@ -12,7 +12,7 @@
   }
   header {
     width: 100%;
-    padding: 1.5rem 10rem;
+    padding: 1.5rem 6.5rem;
   }
   .head {
     background-color: white;
@@ -72,6 +72,7 @@
     align-items: flex-start;
     flex-direction: column;
     display: none;
+    background-color: white;
     width: 100%;
     padding: 1rem 1.5rem;
     box-shadow: 0px 12px 24px -6px rgba(20, 20, 25, 0.0588235294);
@@ -154,5 +155,70 @@
     color: #141414;
     font-size: 20px;
     font-weight: 600;
+  }
+  main {
+    padding: 0 10rem;
+    background: linear-gradient(180deg, #EBF3FF -7.33%, #FFFFFF 76.21%);
+  }
+  .main-1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    padding: 6rem 8rem;
+    gap: 1.5rem;
+  }
+  .main-1 h3:nth-of-type(1) {
+    font-size: 46px;
+    font-weight: 400;
+  }
+  .main-1 h3:nth-of-type(2) {
+    font-size: 64px;
+    font-weight: 900;
+  }
+  .main-1 .vectorr {
+    position: relative;
+    top: -1rem;
+    padding-bottom: 1rem;
+  }
+  .main-1 p {
+    text-align: center;
+    width: 80%;
+    font-weight: 400;
+    font-size: 20px;
+  }
+  .main-1 .main-1-ea {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    gap: 1rem;
+    padding-top: 0.5rem;
+  }
+  .main-1 .main-1-ea .main-1-enter {
+    width: 10rem;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    background-color: #2C7EF8;
+    border-radius: 8px;
+    color: #FFFFFF;
+    font-weight: 600;
+    font-size: 16px;
+  }
+  .main-1 .main-1-ea .main-1-aboutus {
+    width: 10rem;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    background-color: #EBF3FE;
+    color: #2C7EF8;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 16px;
   }
 }/*# sourceMappingURL=style-page1.css.map */
