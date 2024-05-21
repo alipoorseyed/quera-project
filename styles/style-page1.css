@@ -188,6 +188,7 @@
     width: 80%;
     font-weight: 400;
     font-size: 20px;
+    line-height: 30px;
   }
   .main-1 .main-1-ea {
     display: flex;
@@ -255,6 +256,7 @@
     font-weight: 600;
     font-size: 18px;
     text-align: center;
+    line-height: 30px;
   }
   .property .property-list {
     width: 100%;
@@ -271,7 +273,7 @@
     align-items: center;
     flex-direction: column;
     flex-grow: 1;
-    padding: 3rem 1.2rem;
+    padding: 2.4rem 1rem;
     border-radius: 24px;
     border: 1px solid #F5F6F8;
     background-color: #FFFFFF;
@@ -285,7 +287,8 @@
     width: 80%;
     text-align: center;
     font-weight: 400;
-    font-size: 14px;
+    font-size: 16px;
+    line-height: 26px;
   }
   .property .property-list > div h4 {
     text-align: center;
@@ -293,12 +296,12 @@
     font-size: 20px;
   }
   .property .property-list > div div {
-    width: 40px;
-    height: 40px;
+    width: 46px;
+    height: 46px;
     border-radius: 50%;
     background-color: #F5FBFF;
     background-repeat: no-repeat;
-    background-size: 20px 20px;
+    background-size: 23px 23px;
     background-position: center center;
   }
   .property .property-list > div .property-list-1 {
@@ -324,10 +327,12 @@
   }
   .download-app .download-app-def {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: flex-start;
     flex-direction: column;
     width: 40%;
+    height: 100%;
+    gap: 2.5rem;
   }
   .download-app .download-app-def a {
     text-decoration: none;
@@ -347,6 +352,21 @@
     left: -30px;
     top: 50%;
     transform: translate(0%, -50%);
+  }
+  .download-app .download-app-def p {
+    font-size: 18px;
+    font-weight: 400;
+    color: #444749;
+    line-height: 30px;
+  }
+  .download-app .download-app-def p:nth-of-type(1) {
+    position: relative;
+    top: 35px;
+  }
+  .download-app .download-app-def h4 {
+    font-size: 40px;
+    font-weight: 700;
+    color: #191C1E;
   }
   .download-app .download-app-pic {
     width: 60%;

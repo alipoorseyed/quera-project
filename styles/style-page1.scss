@@ -238,6 +238,7 @@
             width: 80%;
             font-weight: 400;
             font-size: 20px;
+            line-height: 30px;
         }
 
         .main-1-ea{
@@ -308,6 +309,7 @@
                 font-weight: 600;
                 font-size: 18px;
                 text-align: center;
+                line-height: 30px;
             }
         }
 
@@ -322,7 +324,7 @@
             & > div{
                 @include display(space-between,center,column);
                 flex-grow: 1;
-                padding: 3rem 1.2rem;
+                padding: 2.4rem 1rem;
                 border-radius: 24px;
                 border: 1px solid $border-color-main1;
                 background-color: $bag-light-main-3;
@@ -338,7 +340,8 @@
                     width: 80%;
                     text-align: center;
                     font-weight:400 ;
-                    font-size: 14px;
+                    font-size: 16px;
+                    line-height: 26px;
                  }
 
                  h4{
@@ -350,12 +353,12 @@
 
 
                  div{
-                   width: 40px;
-                   height: 40px;
+                   width: 46px;
+                   height: 46px;
                    border-radius: 50%;
                    background-color: $bag-light-main-4;
                    background-repeat: no-repeat;
-                    background-size: 20px 20px;
+                    background-size: 23px 23px;
                     background-position: center center; 
                  }
 
@@ -398,8 +401,10 @@
 
 
         .download-app-def{  
-            @include display(space-between,flex-start,column);
+            @include display(center,flex-start,column);
             width: 40%;
+            height: 100%;
+            gap: 2.5rem;
             
             a{
                 text-decoration: none;
@@ -420,6 +425,26 @@
                     transform: translate(0%,-50%);
                 }
             }
+
+            p{
+                font-size: 18px;
+                font-weight: 400;
+                color: $font-color-main-4;
+                line-height: 30px;
+
+                &:nth-of-type(1){
+                    position: relative;
+                    top: 35px;
+                }
+            }
+
+            h4{
+                font-size: 40px;
+                font-weight: 700;
+                color: $font-color-main-5;
+            }
+
+
 
 
             
