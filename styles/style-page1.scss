@@ -291,6 +291,7 @@
         width: 100%;
         gap: 1.5rem;
         padding-top: 5rem;
+        padding-bottom: 7rem;
 
         .property-def{
             @include display(space-between,center,column);
@@ -321,7 +322,7 @@
             & > div{
                 @include display(space-between,center,column);
                 flex-grow: 1;
-                padding: 2rem 1.5rem;
+                padding: 3rem 1.2rem;
                 border-radius: 24px;
                 border: 1px solid $border-color-main1;
                 background-color: $bag-light-main-3;
@@ -377,6 +378,90 @@
             }
 
             
+        }
+
+
+    }
+
+
+
+
+    //main1-4 ................
+
+
+
+    .download-app{
+        width: 100%;
+        height: 427px;
+        @include display(space-between,center,row);
+        gap: 4rem;
+
+
+        .download-app-def{  
+            @include display(space-between,flex-start,column);
+            width: 40%;
+            
+            a{
+                text-decoration: none;
+                position: relative;
+                font-weight: 700;
+                font-size: 18px;
+                color: $font-color-main-3;
+                &::after{
+                    content: "";
+                    width: 20px;
+                    height: 20px;
+                    background-image: url('../images/arrow-right.svg');
+                    background-repeat: no-repeat;
+                    background-size: 20px 20px;
+                    position: absolute;
+                    left: -30px;
+                    top: 50%;
+                    transform: translate(0%,-50%);
+                }
+            }
+
+
+            
+        }
+
+
+
+
+        .download-app-pic{
+            width: 60%;
+            height: 100%;
+            @include display(center,center,row);
+            position: relative;
+            
+           div{
+            &:nth-of-type(1){
+                width: 100%;
+                height: 100%;
+                background: #E6E7E8;
+                background-image: url('../images/image\ 39129\ \(2\).png');
+                background-repeat: no-repeat;
+                background-size: 100% 100%;
+                border-radius: 24px;
+                box-shadow: 0px 0px 11.12px 0px #0000000F;
+            }
+
+            &:nth-of-type(2){
+                height: 100%;
+                width: 35%;
+                background:#E6E7E8;
+                background-image: url('../images/Put\ screen\ in\ here.png');
+                background-repeat: no-repeat;
+                background-size: 100% 100%;
+                border-radius: 25px;
+                border: 10px solid #E6E7E8;
+                box-shadow: 0px 0px 11.12px 0px #0000000F;  
+                position: absolute;
+                top: 40px;
+                right: 65px;
+            }
+           }
+
         }
 
 
