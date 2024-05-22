@@ -318,7 +318,6 @@
   }
   .download-app {
     width: 100%;
-    height: 427px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -370,35 +369,115 @@
   }
   .download-app .download-app-pic {
     width: 60%;
-    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: row;
     position: relative;
   }
-  .download-app .download-app-pic div:nth-of-type(1) {
+  .download-app .download-app-pic img:nth-of-type(1) {
     width: 100%;
     height: 100%;
     background: #E6E7E8;
-    background-image: url("../images/image 39129 (2).png");
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
     border-radius: 24px;
     box-shadow: 0px 0px 11.12px 0px rgba(0, 0, 0, 0.0588235294);
   }
-  .download-app .download-app-pic div:nth-of-type(2) {
-    height: 100%;
+  .download-app .download-app-pic img:nth-of-type(2) {
     width: 35%;
+    height: 100%;
     background: #E6E7E8;
-    background-image: url("../images/Put screen in here.png");
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
     border-radius: 25px;
     border: 10px solid #E6E7E8;
     box-shadow: 0px 0px 11.12px 0px rgba(0, 0, 0, 0.0588235294);
     position: absolute;
     top: 40px;
     right: 65px;
+  }
+  .review {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    gap: 1rem;
+    margin-top: 12rem;
+  }
+  .review .review-section-1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    width: 38%;
+  }
+  .review .review-section-1 h3 {
+    font-size: 40px;
+    font-weight: 700;
+    text-align: center;
+  }
+  .review .review-section-1 p {
+    font-size: 18px;
+    font-weight: 400px;
+    text-align: center;
+    line-height: 30px;
+  }
+  .review .review-section-2 {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    -moz-column-gap: 1.5rem;
+         column-gap: 1.5rem;
+  }
+  .review .review-section-2 .review-section-2-span {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    flex-grow: 1;
+    gap: 1.3rem;
+    width: 30%;
+    padding: 1.5rem 1.8rem;
+    background-color: #FFFFFF;
+    border: 1px solid #F5F6F8;
+    border-radius: 16px;
+    box-shadow: 0px 4px 63px 0px rgba(0, 0, 0, 0.0392156863);
+  }
+  .review .review-section-2 .review-section-2-span > div {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    gap: 0.5rem;
+    width: 100%;
+  }
+  .review .review-section-2 .review-section-2-span > div .review-section-2-span-image {
+    width: 50px;
+    height: 50px;
+  }
+  .review .review-section-2 .review-section-2-span > div .review-section-2-span-def {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 0.35rem;
+  }
+  .review .review-section-2 .review-section-2-span > div .review-section-2-span-def h5 {
+    font-weight: 700;
+    font-size: 15px;
+    color: #141414;
+  }
+  .review .review-section-2 .review-section-2-span > div .review-section-2-span-def p {
+    font-size: 14px;
+    font-weight: 400px;
+    color: #5C5C5C;
+  }
+  .review .review-section-2 .review-section-2-span p {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 24px;
+    text-align: right;
+    color: #444749;
   }
 }/*# sourceMappingURL=style-page1.css.map */

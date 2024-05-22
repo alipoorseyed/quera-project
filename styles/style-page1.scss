@@ -395,7 +395,7 @@
 
     .download-app{
         width: 100%;
-        height: 427px;
+        // height: 427px;
         @include display(space-between,center,row);
         gap: 4rem;
 
@@ -431,7 +431,6 @@
                 font-weight: 400;
                 color: $font-color-main-4;
                 line-height: 30px;
-
                 &:nth-of-type(1){
                     position: relative;
                     top: 35px;
@@ -455,29 +454,22 @@
 
         .download-app-pic{
             width: 60%;
-            height: 100%;
             @include display(center,center,row);
             position: relative;
             
-           div{
+           img{
             &:nth-of-type(1){
                 width: 100%;
                 height: 100%;
                 background: #E6E7E8;
-                background-image: url('../images/image\ 39129\ \(2\).png');
-                background-repeat: no-repeat;
-                background-size: 100% 100%;
                 border-radius: 24px;
                 box-shadow: 0px 0px 11.12px 0px #0000000F;
             }
 
             &:nth-of-type(2){
-                height: 100%;
                 width: 35%;
+                height: 100%;
                 background:#E6E7E8;
-                background-image: url('../images/Put\ screen\ in\ here.png');
-                background-repeat: no-repeat;
-                background-size: 100% 100%;
                 border-radius: 25px;
                 border: 10px solid #E6E7E8;
                 box-shadow: 0px 0px 11.12px 0px #0000000F;  
@@ -490,6 +482,123 @@
         }
 
 
+
+
     }
+
+
+
+
+    //main1-5 .................
+
+
+
+
+
+
+    .review{
+        @include display(space-between,center,column);
+        width: 100%;
+        gap: 1rem;
+        margin-top: 12rem;
+
+        .review-section-1{
+            @include display(space-between,center,column);
+            width: 38%;
+            h3{
+                font-size: 40px;
+                font-weight: 700;
+                text-align: center;
+            }
+
+            p{
+                font-size: 18px;
+                font-weight: 400px;
+                text-align: center;
+                line-height: 30px;
+            }
+        }
+
+
+
+        .review-section-2{
+            width: 100%;
+            @include display(space-between,center,row){
+                flex-wrap: wrap;
+            };
+            column-gap: 1.5rem;
+
+
+            .review-section-2-span{
+                @include display(space-between,center,column){
+                    flex-grow: 1;
+                };
+                gap: 1.3rem;
+                width: 30%;
+                padding: 1.5rem 1.8rem;
+                background-color: $bag-light-main-5;
+                border: 1px solid $border-color-main2;
+                border-radius: 16px;
+                box-shadow: 0px 4px 63px 0px #0000000A;
+
+
+                & > div{
+                        
+                    @include display(flex-start,center,row);
+                    gap: 0.5rem;
+                    width: 100%;
+
+                    .review-section-2-span-image{
+                        width: 50px;
+                        height: 50px;
+                    }
+
+                    .review-section-2-span-def{
+                        @include display(space-between,flex-start,column);
+                        gap: 0.35rem;
+
+
+                        h5{
+                            font-weight: 700;
+                            font-size: 15px;
+                            color: $font-color-main-7;
+                        }
+
+                        p{
+                            font-size: 14px ;
+                            font-weight: 400px;
+                            color: $font-color-main-8;
+                        }
+                    }
+
+                    
+                }
+
+                p{
+                    font-size: 16px;
+                    font-weight: 300;
+                    line-height: 24px;
+                    text-align: right;
+                    color: $font-color-main-6;
+                }
+
+
+            }
+        }
+
+
+
+        // .review-section-3{
+        //     div{
+        //         background-color: ;
+        //     }
+        // }
+    }
+
+
+
+
+
+    
     
 }
