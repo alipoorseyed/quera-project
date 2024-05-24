@@ -407,26 +407,21 @@
             gap: 2.5rem;
             
             a{
+                @include display(center,center,row);
+                gap : .6rem;
                 text-decoration: none;
-                position: relative;
-                font-weight: 700;
-                font-size: 18px;
-                color: $font-color-main-3;
-                &::after{
-                    content: "";
-                    width: 20px;
-                    height: 20px;
-                    background-image: url('../images/arrow-right.svg');
-                    background-repeat: no-repeat;
-                    background-size: 20px 20px;
-                    position: absolute;
-                    left: -30px;
-                    top: 50%;
-                    transform: translate(0%,-50%);
+                p{
+                    font-weight: 700;
+                    font-size: 18px;
+                    color: $font-color-main-3;
+                }
+                img{
+                    width: 22px;
+                    height: 22px;
                 }
             }
 
-            p{
+            & > p{
                 font-size: 18px;
                 font-weight: 400;
                 color: $font-color-main-4;
@@ -499,16 +494,18 @@
     .review{
         @include display(space-between,center,column);
         width: 100%;
-        gap: 1rem;
+        gap: 2.5rem;
         margin-top: 12rem;
 
         .review-section-1{
             @include display(space-between,center,column);
+            gap: 1.4rem;
             width: 38%;
             h3{
                 font-size: 40px;
                 font-weight: 700;
                 text-align: center;
+                color: $font-color-main-9;
             }
 
             p{
@@ -516,6 +513,7 @@
                 font-weight: 400px;
                 text-align: center;
                 line-height: 30px;
+                color: $font-color-main-10;
             }
         }
 
@@ -526,7 +524,8 @@
             @include display(space-between,center,row){
                 flex-wrap: wrap;
             };
-            column-gap: 1.5rem;
+
+             column-gap: 1.5rem;
 
 
             .review-section-2-span{
@@ -535,7 +534,7 @@
                 };
                 gap: 1.3rem;
                 width: 30%;
-                padding: 1.5rem 1.8rem;
+                padding: 1.5rem 0;
                 background-color: $bag-light-main-5;
                 border: 1px solid $border-color-main2;
                 border-radius: 16px;
@@ -546,7 +545,7 @@
                         
                     @include display(flex-start,center,row);
                     gap: 0.5rem;
-                    width: 100%;
+                    width: 75%;
 
                     .review-section-2-span-image{
                         width: 50px;
@@ -572,9 +571,12 @@
                     }
 
                     
+
+                    
                 }
 
-                p{
+                & > p{
+                    width: 75%;
                     font-size: 16px;
                     font-weight: 300;
                     line-height: 24px;
@@ -583,17 +585,198 @@
                 }
 
 
+
             }
         }
 
 
 
-        // .review-section-3{
-        //     div{
-        //         background-color: ;
-        //     }
-        // }
+
+
+
+        .review-section-3{
+            @include display(space-between,center,row);
+            gap: 1rem;
+            div{
+                background-color:$bag-light-main-6;
+                border: 1px solid $border-color-main3;
+                border-radius: 6px;
+                width: 40px;
+                height: 40px;
+                background-repeat: no-repeat;
+                background-position: center center;
+                background-size: 24px 24px;
+
+                &:nth-child(1){
+                    background-image: url('../images/arrow-left-outline\ \(1\).svg');
+                }
+
+
+                &:nth-child(2){
+                    background-image: url('../images/arrow-left-outline.svg');
+                }
+
+                &:hover{
+                    cursor: pointer;
+                }
+            }
+        }
+
+
+
+
+
+
     }
+
+
+
+
+    //footer ............
+
+
+
+
+
+    footer{
+        padding: 0 10rem;
+        margin-top: 8rem;
+
+        .footer{
+            width: 100%;
+            @include display(space-between,center,column);
+            gap: 2.5rem;
+            
+
+            .footer-start{  
+                @include display(center,center,row);
+                width: 100%;
+                gap: 1rem;
+                h5{
+                    font-size: 20px;
+                    font-weight: 600;
+                    color: $font-color-footer-1;
+                }
+                
+                div{
+                    width: 30%;
+                    height: 1px;
+                    background-color: $bag-light-footer-1;
+                }
+
+            }
+
+
+
+            .footer-def{
+                width: 100%;
+                @include display(space-between,center,row);
+
+                .footer-def-right{
+                    @include display(space-between,flex-start,column);
+                    gap: 1.5rem;
+
+
+                     div{
+                        @include display(flex-start,center,row);
+                        gap: .6rem;
+                        
+                        img{
+                            align-self: flex-start;
+                        }
+
+                        p{
+                            font-size: 14px;
+                            font-weight: 400;
+                            line-height: 24px;
+                            color: $font-color-footer-2;
+                        }
+
+                        &:nth-of-type(3){
+                            p{
+                                    width: 50%;
+                             }
+                        }
+                     }
+
+
+                }
+
+
+                .footer-def-left{
+                    @include display(space-between,flex-end,column);
+                    gap: 1.2rem;
+
+                    h5{
+                        width: 70%;
+                        font-size: 16px;
+                        font-weight: 700;
+                        color: $font-color-footer-3;
+                    }
+
+
+                    p{
+                        font-size: 16px;
+                        font-weight: 400;
+                        color: $font-color-footer-3;
+                        line-height: 24px;
+                        width: 70%;
+                    }
+
+
+
+                    div{
+                        width: 70%;
+                        position: relative;
+                        input[type=text]{
+                            width: 100%;
+                            height: 3rem;
+                            border-radius: 10px;
+                            padding: 1rem;
+                        }
+
+
+                        .submit{
+                            @include display(center,center,row);
+                            width:65px;
+                            height: 36px;
+                            border-radius: 8px;
+                            position: absolute;
+                            background-color: rgb(94, 94, 205);
+                            left: 6px;
+                            top: 50%;
+                            transform: translate(0,-50%);
+                            background-color: $bag-light-footer-2;
+                            color: $font-color-footer-5;
+                            font-size: 14px;
+
+                            &:hover{
+                                cursor: pointer;
+                            }
+                        }
+                    }
+                    
+                }
+            }
+
+
+            .footer-end{
+                width: 100%;
+                @include display(center,center,row);
+                p{
+                    font-size: 14px;
+                    font-weight: 400;
+                    color: $font-color-footer-4;
+                }
+            }
+        }
+
+    }
+
+
+
+
+
 
 
 

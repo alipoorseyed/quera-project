@@ -334,31 +334,29 @@
     gap: 2.5rem;
   }
   .download-app .download-app-def a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 0.6rem;
     text-decoration: none;
-    position: relative;
+  }
+  .download-app .download-app-def a p {
     font-weight: 700;
     font-size: 18px;
     color: #2C7EF8;
   }
-  .download-app .download-app-def a::after {
-    content: "";
-    width: 20px;
-    height: 20px;
-    background-image: url("../images/arrow-right.svg");
-    background-repeat: no-repeat;
-    background-size: 20px 20px;
-    position: absolute;
-    left: -30px;
-    top: 50%;
-    transform: translate(0%, -50%);
+  .download-app .download-app-def a img {
+    width: 22px;
+    height: 22px;
   }
-  .download-app .download-app-def p {
+  .download-app .download-app-def > p {
     font-size: 18px;
     font-weight: 400;
     color: #444749;
     line-height: 30px;
   }
-  .download-app .download-app-def p:nth-of-type(1) {
+  .download-app .download-app-def > p:nth-of-type(1) {
     position: relative;
     top: 35px;
   }
@@ -399,7 +397,7 @@
     align-items: center;
     flex-direction: column;
     width: 100%;
-    gap: 1rem;
+    gap: 2.5rem;
     margin-top: 12rem;
   }
   .review .review-section-1 {
@@ -407,18 +405,21 @@
     justify-content: space-between;
     align-items: center;
     flex-direction: column;
+    gap: 1.4rem;
     width: 38%;
   }
   .review .review-section-1 h3 {
     font-size: 40px;
     font-weight: 700;
     text-align: center;
+    color: #191C1E;
   }
   .review .review-section-1 p {
     font-size: 18px;
     font-weight: 400px;
     text-align: center;
     line-height: 30px;
+    color: #444749;
   }
   .review .review-section-2 {
     width: 100%;
@@ -438,7 +439,7 @@
     flex-grow: 1;
     gap: 1.3rem;
     width: 30%;
-    padding: 1.5rem 1.8rem;
+    padding: 1.5rem 0;
     background-color: #FFFFFF;
     border: 1px solid #F5F6F8;
     border-radius: 16px;
@@ -450,7 +451,7 @@
     align-items: center;
     flex-direction: row;
     gap: 0.5rem;
-    width: 100%;
+    width: 75%;
   }
   .review .review-section-2 .review-section-2-span > div .review-section-2-span-image {
     width: 50px;
@@ -473,11 +474,163 @@
     font-weight: 400px;
     color: #5C5C5C;
   }
-  .review .review-section-2 .review-section-2-span p {
+  .review .review-section-2 .review-section-2-span > p {
+    width: 75%;
     font-size: 16px;
     font-weight: 300;
     line-height: 24px;
     text-align: right;
     color: #444749;
+  }
+  .review .review-section-3 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    gap: 1rem;
+  }
+  .review .review-section-3 div {
+    background-color: #FFFFFF;
+    border: 1px solid #E3E6E8;
+    border-radius: 6px;
+    width: 40px;
+    height: 40px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 24px 24px;
+  }
+  .review .review-section-3 div:nth-child(1) {
+    background-image: url("../images/arrow-left-outline (1).svg");
+  }
+  .review .review-section-3 div:nth-child(2) {
+    background-image: url("../images/arrow-left-outline.svg");
+  }
+  .review .review-section-3 div:hover {
+    cursor: pointer;
+  }
+  footer {
+    padding: 0 10rem;
+    margin-top: 8rem;
+  }
+  footer .footer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    gap: 2.5rem;
+  }
+  footer .footer .footer-start {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    gap: 1rem;
+  }
+  footer .footer .footer-start h5 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #141414;
+  }
+  footer .footer .footer-start div {
+    width: 30%;
+    height: 1px;
+    background-color: #AFAFAF;
+  }
+  footer .footer .footer-def {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+  }
+  footer .footer .footer-def .footer-def-right {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  footer .footer .footer-def .footer-def-right div {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    gap: 0.6rem;
+  }
+  footer .footer .footer-def .footer-def-right div img {
+    align-self: flex-start;
+  }
+  footer .footer .footer-def .footer-def-right div p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #242424;
+  }
+  footer .footer .footer-def .footer-def-right div:nth-of-type(3) p {
+    width: 50%;
+  }
+  footer .footer .footer-def .footer-def-left {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-direction: column;
+    gap: 1.2rem;
+  }
+  footer .footer .footer-def .footer-def-left h5 {
+    width: 70%;
+    font-size: 16px;
+    font-weight: 700;
+    color: #242424;
+  }
+  footer .footer .footer-def .footer-def-left p {
+    font-size: 16px;
+    font-weight: 400;
+    color: #242424;
+    line-height: 24px;
+    width: 70%;
+  }
+  footer .footer .footer-def .footer-def-left div {
+    width: 70%;
+    position: relative;
+  }
+  footer .footer .footer-def .footer-def-left div input[type=text] {
+    width: 100%;
+    height: 3rem;
+    border-radius: 10px;
+    padding: 1rem;
+  }
+  footer .footer .footer-def .footer-def-left div .submit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 65px;
+    height: 36px;
+    border-radius: 8px;
+    position: absolute;
+    background-color: rgb(94, 94, 205);
+    left: 6px;
+    top: 50%;
+    transform: translate(0, -50%);
+    background-color: #037FFF;
+    color: #FFFFFF;
+    font-size: 14px;
+  }
+  footer .footer .footer-def .footer-def-left div .submit:hover {
+    cursor: pointer;
+  }
+  footer .footer .footer-end {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+  }
+  footer .footer .footer-end p {
+    font-size: 14px;
+    font-weight: 400;
+    color: #666666;
   }
 }/*# sourceMappingURL=style-page1.css.map */
