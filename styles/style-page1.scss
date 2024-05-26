@@ -1,6 +1,11 @@
 @import "_mixin.scss";
 @import "_variable.scss";
 
+@font-face {
+    font-family: 'Yekan';
+    src: url('./fonts/B_Yekan/Yekan.ttf')format('truetype');
+}
+
 @include respond-to(4000px){
     *{
         padding: 0;
@@ -10,6 +15,7 @@
     
     body{
         direction: rtl;
+        font-family: 'Yekan';
     }
     
     .span-div{

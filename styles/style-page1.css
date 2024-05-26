@@ -1,3 +1,7 @@
+@font-face {
+  font-family: "Yekan";
+  src: url("./fonts/B_Yekan/Yekan.ttf") format("truetype");
+}
 @media (max-width: 4000px) {
   * {
     padding: 0;
@@ -6,6 +10,7 @@
   }
   body {
     direction: rtl;
+    font-family: "Yekan";
   }
   .span-div {
     width: 100%;
