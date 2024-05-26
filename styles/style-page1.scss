@@ -1,7 +1,7 @@
 @import "_mixin.scss";
 @import "_variable.scss";
 
-@include respond-to(2000px){
+@include respond-to(4000px){
     *{
         padding: 0;
         margin: 0;
@@ -28,20 +28,63 @@
     header{
         width: 100%;
         padding: 1.5rem 6.5rem;
+
+
+        @include respond-to(1200px){
+            padding: 1.5rem 5rem;
+        }
+
+        @include respond-to(1100px){
+            padding: 1.5rem 4rem;
+        }
+
+        
+        @include respond-to(970px){
+            padding: 1.5rem 2.5rem;
+        }
+
+        @include respond-to(750px){
+            padding: 1.5rem 1.5rem;
+        }
+
     }
     
     
     .head{
         background-color: $bag-light-head-1;
         width: 100%;
+        position: relative;
         @include display(space-between,center,row);
 
+
+        @include respond-to(750px){
+            @include display(center,center,row);
+        }
+
         //left head .............
+
+
+        img{
+            display: none;
+
+            @include respond-to(750px){
+                display: flex;
+                position: absolute;
+                right: 0;
+            }
+            
+        }
 
         .head-left{
             @include display(space-between,center,row);
             position: relative;
             gap: 1rem;
+
+            @include respond-to(750px){
+                display: none;
+            }
+
+
             .enter_program{
                 padding: .8rem 2rem;
                 color: $font-color-head-4;
@@ -52,6 +95,10 @@
                 @include display(center,center,row);
                 &:hover{
                     cursor: pointer;
+                }
+
+                @include respond-to(970px){
+                    padding: .7rem 1.5rem;
                 }
             }
 
@@ -69,6 +116,13 @@
                     cursor: pointer;
                     filter: brightness(.1);
                 }
+
+                @include respond-to(970px){
+                    width: 2.4rem;
+                    height: 2.4rem;
+                    background-size: 1.4rem 1.4rem;
+                }
+                
             }
 
             input[type=checkbox]{
@@ -168,6 +222,14 @@
         .head-right{
             @include display(space-between,center,row);
             gap : 4.5rem;
+
+            @include respond-to(1100px){
+                gap: 3rem
+            };
+
+            @include respond-to(970px){
+                gap: 2rem
+            };
             
             a{
                 color: $font-color-head-1;
@@ -181,6 +243,10 @@
                 &:nth-of-type(1){
                     color: $font-color-head-3;
                 }
+
+                @include respond-to(750px){
+                    display: none;
+                }
             }
 
             h2{
@@ -188,7 +254,14 @@
                 font-size: 20px;
                 font-weight: 600;
 
+                @include respond-to(750px){
+                    position: relative;
+                    left: 12px;
+                    font-size: 24px;
+                }
+
             }
+
         }
     }
 
@@ -207,21 +280,83 @@
     main{
         padding: 0 10rem ;
         background: linear-gradient(180deg, #EBF3FF -7.33%, #FFFFFF 76.21%);
+
+        @include respond-to(1200px){
+            padding: 0 7.7rem;
+        }
+
+
+        @include respond-to(1100px){
+            padding: 0 6rem;
+        }
+
+        
+        @include respond-to(970px){
+            padding: 0 4rem;
+        }
+
+        @include respond-to(850px){
+            padding: 0 2rem;
+        }
+
+        @include respond-to(750px){
+            padding: 0 1rem;
+        }
     }
 
 
     .main-1{
+        width: 100%;
         @include display(space-between,center,column);
         padding: 6rem 8rem 3rem 8rem;
         gap: 1.5rem;
+
+        @include respond-to(1200px){
+            padding: 6rem 6.5rem 3rem 6.5rem;
+        }
+
+        @include respond-to(1100px){
+            padding: 6rem 6rem 3rem 6rem;
+        }
+
+
+        @include respond-to(970px){
+            padding: 6rem 4rem 3rem 4rem;
+        }
+
+        @include respond-to(750px){
+            padding: 6rem 2.5rem 3rem 2.5rem;
+        }
+
+
         h3:nth-of-type(1){
             font-size: 46px;
             font-weight: 400;
+
+
+            @include respond-to(970px){
+                font-size: 38px;
+            }
+
+        
+            @include respond-to(750px){
+                font-size: 34px;
+            }
+            
+
         }
 
         h3:nth-of-type(2){
             font-size: 64px;
             font-weight: 900;
+
+            @include respond-to(970px){
+                font-size: 50px;
+            }
+
+            @include respond-to(750px){
+                font-size: 44px;
+            }
         }
          
         .vectorr{
@@ -230,6 +365,14 @@
             padding-bottom: .5rem;
             width: 13rem;
             height: auto;
+
+            @include respond-to(970px){
+                width: 10rem;
+            }
+
+            @include respond-to(750px){
+                width: 8.5rem;
+            }
         }
 
 
@@ -239,7 +382,13 @@
             font-weight: 400;
             font-size: 20px;
             line-height: 30px;
+
+            @include respond-to(970px){
+                width: 90%;
+            }
         }
+
+
 
         .main-1-ea{
             @include display(space-between,center,row);
@@ -255,6 +404,10 @@
                 color: $font-color-main-1;
                 font-weight: 600;
                 font-size: 16px;
+
+                @include respond-to(970px){
+                    width: 9rem;
+                }
             }
 
             .main-1-aboutus{
@@ -266,6 +419,10 @@
                 border-radius: 8px;
                 font-weight: 600;
                 font-size: 16px;
+
+                @include respond-to(970px){
+                    width: 9rem;
+                }
             }
         }
     }
@@ -274,7 +431,7 @@
 
     //main1-2 ..............
 
-    .main-1 + img{
+     .main-1 + img{
         width: 100%;
         height: auto;
     }
@@ -297,11 +454,24 @@
         .property-def{
             @include display(space-between,center,column);
             gap: 1.5rem;
-            width: 50%;
+            width: 70%;
+
+            @include respond-to(750px){
+                width: 80%;
+            }
+
             h3{
                 font-weight: 600;
                 font-size: 40px;
                 text-align: center;
+
+                @include respond-to(970px){
+                    font-size: 35px;
+                }
+
+                @include respond-to(750px){
+                    font-size: 30px;
+                }
             }
 
             p{
@@ -310,6 +480,14 @@
                 font-size: 18px;
                 text-align: center;
                 line-height: 30px;
+
+                @include respond-to(970px){
+                    font-size: 17px;
+                }
+
+                @include respond-to(750px){
+                    font-size: 16px;
+                }
             }
         }
 
@@ -319,6 +497,20 @@
             @include display(space-between,center,row);
             gap: 1.5rem;
             padding-top: 1.2rem;
+
+            @include respond-to(900px){
+                flex-wrap: wrap;
+                width: 80%;
+            }
+
+            @include respond-to(750px){
+                width: 90%;
+            }
+
+            // @include respond-to(550px){
+            //     flex-wrap: wrap;
+            //     width: 100%;
+            // }
 
 
             & > div{
@@ -330,6 +522,22 @@
                 background-color: $bag-light-main-3;
                 box-shadow: 0px 4px 63px 0px #00000008;
                 gap: 1.3rem;
+                
+
+                @include respond-to(1200px){
+                    padding: 2.2rem .8rem;
+                }
+
+                @include respond-to(900px){
+                    width: 40%;
+                }
+
+                @include respond-to(750px){
+                    padding: 1.2rem .5rem;
+                    gap: 1rem;
+                }
+
+
 
                 &:hover{
                     cursor: pointer;
@@ -395,9 +603,9 @@
 
     .download-app{
         width: 100%;
-        // height: 427px;
         @include display(space-between,center,row);
         gap: 4rem;
+
 
 
         .download-app-def{  
@@ -405,6 +613,10 @@
             width: 40%;
             height: 100%;
             gap: 2.5rem;
+
+            @include respond-to(800px){
+                gap: 2rem;
+            }
             
             a{
                 @include display(center,center,row);
@@ -419,6 +631,7 @@
                     width: 22px;
                     height: 22px;
                 }
+
             }
 
             & > p{
@@ -426,9 +639,20 @@
                 font-weight: 400;
                 color: $font-color-main-4;
                 line-height: 30px;
+
+                
                 &:nth-of-type(1){
                     position: relative;
                     top: 35px;
+
+                    @include respond-to(800px){
+                        top: 20px;
+                    }
+                }
+
+                @include respond-to(800px){
+                    font-size: 16px;
+                    line-height: 24px;
                 }
             }
 
@@ -436,6 +660,10 @@
                 font-size: 40px;
                 font-weight: 700;
                 color: $font-color-main-5;
+                @include respond-to(800px){
+                    font-size: 32px;
+                    line-height: 24px;
+                }
             }
 
 
@@ -501,11 +729,21 @@
             @include display(space-between,center,column);
             gap: 1.4rem;
             width: 38%;
+
+
+            @include respond-to(970px){
+                width: 55%;
+            }
+
             h3{
                 font-size: 40px;
                 font-weight: 700;
                 text-align: center;
                 color: $font-color-main-9;
+
+                @include respond-to(970px){
+                    font-size: 32px;
+                }
             }
 
             p{
@@ -514,6 +752,7 @@
                 text-align: center;
                 line-height: 30px;
                 color: $font-color-main-10;
+
             }
         }
 
@@ -526,6 +765,8 @@
             };
 
              column-gap: 1.5rem;
+             row-gap: .5rem;
+
 
 
             .review-section-2-span{
@@ -539,6 +780,11 @@
                 border: 1px solid $border-color-main2;
                 border-radius: 16px;
                 box-shadow: 0px 4px 63px 0px #0000000A;
+
+
+                @include respond-to(900px){
+                    width: 40%;
+                }
 
 
                 & > div{
@@ -572,6 +818,13 @@
 
                     
 
+                    @include respond-to(1000px){
+                        width: 80%;
+                    }
+
+                    @include respond-to(900px){
+                        width: 75%;
+                    }
                     
                 }
 
@@ -582,6 +835,14 @@
                     line-height: 24px;
                     text-align: right;
                     color: $font-color-main-6;
+
+                    @include respond-to(1000px){
+                        width: 80%;
+                    }
+
+                    @include respond-to(900px){
+                        width: 75%;
+                    }
                 }
 
 
@@ -641,6 +902,35 @@
     footer{
         padding: 0 10rem;
         margin-top: 8rem;
+
+
+        
+
+        
+        @include respond-to(1200px){
+            padding: 0 7.7rem;
+        }
+
+
+        @include respond-to(1100px){
+            padding: 0 6rem;
+        }
+
+
+        
+        @include respond-to(970px){
+            padding: 0 4rem;
+        }
+
+        @include respond-to(850px){
+            padding: 0 2rem;
+        }
+
+        @include respond-to(750px){
+            padding: 0 1rem;
+        }
+
+        
 
         .footer{
             width: 100%;

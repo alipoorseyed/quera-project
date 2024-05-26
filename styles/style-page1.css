@@ -1,4 +1,4 @@
-@media (max-width: 2000px) {
+@media (max-width: 4000px) {
   * {
     padding: 0;
     margin: 0;
@@ -14,14 +14,59 @@
     width: 100%;
     padding: 1.5rem 6.5rem;
   }
+}
+@media (max-width: 4000px) and (max-width: 1200px) {
+  header {
+    padding: 1.5rem 5rem;
+  }
+}
+@media (max-width: 4000px) and (max-width: 1100px) {
+  header {
+    padding: 1.5rem 4rem;
+  }
+}
+@media (max-width: 4000px) and (max-width: 970px) {
+  header {
+    padding: 1.5rem 2.5rem;
+  }
+}
+@media (max-width: 4000px) and (max-width: 750px) {
+  header {
+    padding: 1.5rem 1.5rem;
+  }
+}
+@media (max-width: 4000px) {
   .head {
     background-color: white;
     width: 100%;
+    position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-direction: row;
   }
+}
+@media (max-width: 4000px) and (max-width: 750px) {
+  .head {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+  }
+}
+@media (max-width: 4000px) {
+  .head img {
+    display: none;
+  }
+}
+@media (max-width: 4000px) and (max-width: 750px) {
+  .head img {
+    display: flex;
+    position: absolute;
+    right: 0;
+  }
+}
+@media (max-width: 4000px) {
   .head .head-left {
     display: flex;
     justify-content: space-between;
@@ -30,6 +75,13 @@
     position: relative;
     gap: 1rem;
   }
+}
+@media (max-width: 4000px) and (max-width: 750px) {
+  .head .head-left {
+    display: none;
+  }
+}
+@media (max-width: 4000px) {
   .head .head-left .enter_program {
     padding: 0.8rem 2rem;
     color: #FFFFFF;
@@ -45,6 +97,13 @@
   .head .head-left .enter_program:hover {
     cursor: pointer;
   }
+}
+@media (max-width: 4000px) and (max-width: 970px) {
+  .head .head-left .enter_program {
+    padding: 0.7rem 1.5rem;
+  }
+}
+@media (max-width: 4000px) {
   .head .head-left .them {
     width: 2.6rem;
     height: 2.6rem;
@@ -60,6 +119,15 @@
     cursor: pointer;
     filter: brightness(0.1);
   }
+}
+@media (max-width: 4000px) and (max-width: 970px) {
+  .head .head-left .them {
+    width: 2.4rem;
+    height: 2.4rem;
+    background-size: 1.4rem 1.4rem;
+  }
+}
+@media (max-width: 4000px) {
   .head .head-left input[type=checkbox] {
     display: none;
   }
@@ -138,6 +206,18 @@
     flex-direction: row;
     gap: 4.5rem;
   }
+}
+@media (max-width: 4000px) and (max-width: 1100px) {
+  .head .head-right {
+    gap: 3rem;
+  }
+}
+@media (max-width: 4000px) and (max-width: 970px) {
+  .head .head-right {
+    gap: 2rem;
+  }
+}
+@media (max-width: 4000px) {
   .head .head-right a {
     color: #666666;
     text-decoration: none;
@@ -151,16 +231,60 @@
   .head .head-right a:nth-of-type(1) {
     color: #2C7EF8;
   }
+}
+@media (max-width: 4000px) and (max-width: 750px) {
+  .head .head-right a {
+    display: none;
+  }
+}
+@media (max-width: 4000px) {
   .head .head-right h2 {
     color: #141414;
     font-size: 20px;
     font-weight: 600;
   }
+}
+@media (max-width: 4000px) and (max-width: 750px) {
+  .head .head-right h2 {
+    position: relative;
+    left: 12px;
+    font-size: 24px;
+  }
+}
+@media (max-width: 4000px) {
   main {
     padding: 0 10rem;
     background: linear-gradient(180deg, #EBF3FF -7.33%, #FFFFFF 76.21%);
   }
+}
+@media (max-width: 4000px) and (max-width: 1200px) {
+  main {
+    padding: 0 7.7rem;
+  }
+}
+@media (max-width: 4000px) and (max-width: 1100px) {
+  main {
+    padding: 0 6rem;
+  }
+}
+@media (max-width: 4000px) and (max-width: 970px) {
+  main {
+    padding: 0 4rem;
+  }
+}
+@media (max-width: 4000px) and (max-width: 850px) {
+  main {
+    padding: 0 2rem;
+  }
+}
+@media (max-width: 4000px) and (max-width: 750px) {
+  main {
+    padding: 0 1rem;
+  }
+}
+@media (max-width: 4000px) {
   .main-1 {
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -168,14 +292,60 @@
     padding: 6rem 8rem 3rem 8rem;
     gap: 1.5rem;
   }
+}
+@media (max-width: 4000px) and (max-width: 1200px) {
+  .main-1 {
+    padding: 6rem 6.5rem 3rem 6.5rem;
+  }
+}
+@media (max-width: 4000px) and (max-width: 1100px) {
+  .main-1 {
+    padding: 6rem 6rem 3rem 6rem;
+  }
+}
+@media (max-width: 4000px) and (max-width: 970px) {
+  .main-1 {
+    padding: 6rem 4rem 3rem 4rem;
+  }
+}
+@media (max-width: 4000px) and (max-width: 750px) {
+  .main-1 {
+    padding: 6rem 2.5rem 3rem 2.5rem;
+  }
+}
+@media (max-width: 4000px) {
   .main-1 h3:nth-of-type(1) {
     font-size: 46px;
     font-weight: 400;
   }
+}
+@media (max-width: 4000px) and (max-width: 970px) {
+  .main-1 h3:nth-of-type(1) {
+    font-size: 38px;
+  }
+}
+@media (max-width: 4000px) and (max-width: 750px) {
+  .main-1 h3:nth-of-type(1) {
+    font-size: 34px;
+  }
+}
+@media (max-width: 4000px) {
   .main-1 h3:nth-of-type(2) {
     font-size: 64px;
     font-weight: 900;
   }
+}
+@media (max-width: 4000px) and (max-width: 970px) {
+  .main-1 h3:nth-of-type(2) {
+    font-size: 50px;
+  }
+}
+@media (max-width: 4000px) and (max-width: 750px) {
+  .main-1 h3:nth-of-type(2) {
+    font-size: 44px;
+  }
+}
+@media (max-width: 4000px) {
   .main-1 .vectorr {
     position: relative;
     top: -1rem;
@@ -183,6 +353,18 @@
     width: 13rem;
     height: auto;
   }
+}
+@media (max-width: 4000px) and (max-width: 970px) {
+  .main-1 .vectorr {
+    width: 10rem;
+  }
+}
+@media (max-width: 4000px) and (max-width: 750px) {
+  .main-1 .vectorr {
+    width: 8.5rem;
+  }
+}
+@media (max-width: 4000px) {
   .main-1 p {
     text-align: center;
     width: 80%;
@@ -190,6 +372,13 @@
     font-size: 20px;
     line-height: 30px;
   }
+}
+@media (max-width: 4000px) and (max-width: 970px) {
+  .main-1 p {
+    width: 90%;
+  }
+}
+@media (max-width: 4000px) {
   .main-1 .main-1-ea {
     display: flex;
     justify-content: space-between;
@@ -211,6 +400,13 @@
     font-weight: 600;
     font-size: 16px;
   }
+}
+@media (max-width: 4000px) and (max-width: 970px) {
+  .main-1 .main-1-ea .main-1-enter {
+    width: 9rem;
+  }
+}
+@media (max-width: 4000px) {
   .main-1 .main-1-ea .main-1-aboutus {
     width: 10rem;
     height: 3rem;
@@ -224,6 +420,13 @@
     font-weight: 600;
     font-size: 16px;
   }
+}
+@media (max-width: 4000px) and (max-width: 970px) {
+  .main-1 .main-1-ea .main-1-aboutus {
+    width: 9rem;
+  }
+}
+@media (max-width: 4000px) {
   .main-1 + img {
     width: 100%;
     height: auto;
@@ -244,13 +447,32 @@
     align-items: center;
     flex-direction: column;
     gap: 1.5rem;
-    width: 50%;
+    width: 70%;
   }
+}
+@media (max-width: 4000px) and (max-width: 750px) {
+  .property .property-def {
+    width: 80%;
+  }
+}
+@media (max-width: 4000px) {
   .property .property-def h3 {
     font-weight: 600;
     font-size: 40px;
     text-align: center;
   }
+}
+@media (max-width: 4000px) and (max-width: 970px) {
+  .property .property-def h3 {
+    font-size: 35px;
+  }
+}
+@media (max-width: 4000px) and (max-width: 750px) {
+  .property .property-def h3 {
+    font-size: 30px;
+  }
+}
+@media (max-width: 4000px) {
   .property .property-def p {
     width: 80%;
     font-weight: 600;
@@ -258,6 +480,18 @@
     text-align: center;
     line-height: 30px;
   }
+}
+@media (max-width: 4000px) and (max-width: 970px) {
+  .property .property-def p {
+    font-size: 17px;
+  }
+}
+@media (max-width: 4000px) and (max-width: 750px) {
+  .property .property-def p {
+    font-size: 16px;
+  }
+}
+@media (max-width: 4000px) {
   .property .property-list {
     width: 100%;
     display: flex;
@@ -267,6 +501,19 @@
     gap: 1.5rem;
     padding-top: 1.2rem;
   }
+}
+@media (max-width: 4000px) and (max-width: 900px) {
+  .property .property-list {
+    flex-wrap: wrap;
+    width: 80%;
+  }
+}
+@media (max-width: 4000px) and (max-width: 750px) {
+  .property .property-list {
+    width: 90%;
+  }
+}
+@media (max-width: 4000px) {
   .property .property-list > div {
     display: flex;
     justify-content: space-between;
@@ -280,6 +527,24 @@
     box-shadow: 0px 4px 63px 0px rgba(0, 0, 0, 0.031372549);
     gap: 1.3rem;
   }
+}
+@media (max-width: 4000px) and (max-width: 1200px) {
+  .property .property-list > div {
+    padding: 2.2rem 0.8rem;
+  }
+}
+@media (max-width: 4000px) and (max-width: 900px) {
+  .property .property-list > div {
+    width: 40%;
+  }
+}
+@media (max-width: 4000px) and (max-width: 750px) {
+  .property .property-list > div {
+    padding: 1.2rem 0.5rem;
+    gap: 1rem;
+  }
+}
+@media (max-width: 4000px) {
   .property .property-list > div:hover {
     cursor: pointer;
   }
@@ -333,6 +598,13 @@
     height: 100%;
     gap: 2.5rem;
   }
+}
+@media (max-width: 4000px) and (max-width: 800px) {
+  .download-app .download-app-def {
+    gap: 2rem;
+  }
+}
+@media (max-width: 4000px) {
   .download-app .download-app-def a {
     display: flex;
     justify-content: center;
@@ -360,11 +632,32 @@
     position: relative;
     top: 35px;
   }
+}
+@media (max-width: 4000px) and (max-width: 800px) {
+  .download-app .download-app-def > p:nth-of-type(1) {
+    top: 20px;
+  }
+}
+@media (max-width: 4000px) and (max-width: 800px) {
+  .download-app .download-app-def > p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+@media (max-width: 4000px) {
   .download-app .download-app-def h4 {
     font-size: 40px;
     font-weight: 700;
     color: #191C1E;
   }
+}
+@media (max-width: 4000px) and (max-width: 800px) {
+  .download-app .download-app-def h4 {
+    font-size: 32px;
+    line-height: 24px;
+  }
+}
+@media (max-width: 4000px) {
   .download-app .download-app-pic {
     width: 60%;
     display: flex;
@@ -408,12 +701,26 @@
     gap: 1.4rem;
     width: 38%;
   }
+}
+@media (max-width: 4000px) and (max-width: 970px) {
+  .review .review-section-1 {
+    width: 55%;
+  }
+}
+@media (max-width: 4000px) {
   .review .review-section-1 h3 {
     font-size: 40px;
     font-weight: 700;
     text-align: center;
     color: #191C1E;
   }
+}
+@media (max-width: 4000px) and (max-width: 970px) {
+  .review .review-section-1 h3 {
+    font-size: 32px;
+  }
+}
+@media (max-width: 4000px) {
   .review .review-section-1 p {
     font-size: 18px;
     font-weight: 400px;
@@ -430,6 +737,7 @@
     flex-wrap: wrap;
     -moz-column-gap: 1.5rem;
          column-gap: 1.5rem;
+    row-gap: 0.5rem;
   }
   .review .review-section-2 .review-section-2-span {
     display: flex;
@@ -445,6 +753,13 @@
     border-radius: 16px;
     box-shadow: 0px 4px 63px 0px rgba(0, 0, 0, 0.0392156863);
   }
+}
+@media (max-width: 4000px) and (max-width: 900px) {
+  .review .review-section-2 .review-section-2-span {
+    width: 40%;
+  }
+}
+@media (max-width: 4000px) {
   .review .review-section-2 .review-section-2-span > div {
     display: flex;
     justify-content: flex-start;
@@ -474,6 +789,18 @@
     font-weight: 400px;
     color: #5C5C5C;
   }
+}
+@media (max-width: 4000px) and (max-width: 1000px) {
+  .review .review-section-2 .review-section-2-span > div {
+    width: 80%;
+  }
+}
+@media (max-width: 4000px) and (max-width: 900px) {
+  .review .review-section-2 .review-section-2-span > div {
+    width: 75%;
+  }
+}
+@media (max-width: 4000px) {
   .review .review-section-2 .review-section-2-span > p {
     width: 75%;
     font-size: 16px;
@@ -482,6 +809,18 @@
     text-align: right;
     color: #444749;
   }
+}
+@media (max-width: 4000px) and (max-width: 1000px) {
+  .review .review-section-2 .review-section-2-span > p {
+    width: 80%;
+  }
+}
+@media (max-width: 4000px) and (max-width: 900px) {
+  .review .review-section-2 .review-section-2-span > p {
+    width: 75%;
+  }
+}
+@media (max-width: 4000px) {
   .review .review-section-3 {
     display: flex;
     justify-content: space-between;
@@ -512,6 +851,33 @@
     padding: 0 10rem;
     margin-top: 8rem;
   }
+}
+@media (max-width: 4000px) and (max-width: 1200px) {
+  footer {
+    padding: 0 7.7rem;
+  }
+}
+@media (max-width: 4000px) and (max-width: 1100px) {
+  footer {
+    padding: 0 6rem;
+  }
+}
+@media (max-width: 4000px) and (max-width: 970px) {
+  footer {
+    padding: 0 4rem;
+  }
+}
+@media (max-width: 4000px) and (max-width: 850px) {
+  footer {
+    padding: 0 2rem;
+  }
+}
+@media (max-width: 4000px) and (max-width: 750px) {
+  footer {
+    padding: 0 1rem;
+  }
+}
+@media (max-width: 4000px) {
   footer .footer {
     width: 100%;
     display: flex;
