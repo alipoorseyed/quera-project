@@ -302,6 +302,10 @@
         @include respond-to(750px){
             padding: 0 1rem;
         }
+
+        @include respond-to(550px){
+            padding: 0 0.5rem;
+        }
     }
 
 
@@ -328,6 +332,14 @@
             padding: 6rem 2.5rem 3rem 2.5rem;
         }
 
+        @include respond-to(550px){
+            padding: 6rem 1rem 3rem 1rem;
+        }
+
+        @include respond-to(365px){
+            padding: 6rem .3rem 3rem .3rem;
+        }
+
 
         h3:nth-of-type(1){
             font-size: 46px;
@@ -341,6 +353,10 @@
         
             @include respond-to(750px){
                 font-size: 34px;
+            }
+
+            @include respond-to(550px){
+                font-size: 28px;
             }
             
 
@@ -356,6 +372,10 @@
 
             @include respond-to(750px){
                 font-size: 44px;
+            }
+
+            @include respond-to(550px){
+                font-size: 36px;
             }
         }
          
@@ -373,6 +393,12 @@
             @include respond-to(750px){
                 width: 8.5rem;
             }
+
+            
+        @include respond-to(550px){
+            width: 7rem;
+          }
+
         }
 
 
@@ -460,6 +486,15 @@
                 width: 80%;
             }
 
+            @include respond-to(550px){
+                width: 90%;
+            }
+
+            
+            @include respond-to(400px){
+                width: 100%;
+            }
+
             h3{
                 font-weight: 600;
                 font-size: 40px;
@@ -472,6 +507,11 @@
                 @include respond-to(750px){
                     font-size: 30px;
                 }
+
+                @include respond-to(399px){
+                    font-size: 27px;
+                }
+                
             }
 
             p{
@@ -487,6 +527,10 @@
 
                 @include respond-to(750px){
                     font-size: 16px;
+                }
+
+                @include respond-to(399px){
+                    font-size: 15px;
                 }
             }
         }
@@ -507,10 +551,11 @@
                 width: 90%;
             }
 
-            // @include respond-to(550px){
-            //     flex-wrap: wrap;
-            //     width: 100%;
-            // }
+            @include respond-to(550px){
+                width: 100%;
+                gap: .8rem
+            }
+
 
 
             & > div{
@@ -556,6 +601,9 @@
                     text-align: center;
                     font-weight:700 ;
                     font-size: 20px;
+                    @include respond-to(359px){
+                        font-size: 16px;
+                    }
                  }
         
 
@@ -606,6 +654,10 @@
         @include display(space-between,center,row);
         gap: 4rem;
 
+        @include respond-to(750px){
+            @include display(space-between,center,column);
+        }
+
 
 
         .download-app-def{  
@@ -616,6 +668,11 @@
 
             @include respond-to(800px){
                 gap: 2rem;
+            }
+
+            @include respond-to(750px){
+                @include display(center,center,column);
+                width: 80%;
             }
             
             a{
@@ -654,6 +711,11 @@
                     font-size: 16px;
                     line-height: 24px;
                 }
+
+                
+                @include respond-to(750px){
+                    text-align: center;
+                }
             }
 
             h4{
@@ -663,6 +725,23 @@
                 @include respond-to(800px){
                     font-size: 32px;
                     line-height: 24px;
+                }
+            }
+
+            & > img{
+                display: none;
+                width: 210px;
+                height: auto;
+                background:#E6E7E8;
+                border-radius: 25px;
+                border: 10px solid #E6E7E8;
+                border-bottom: 0;
+                border-bottom-left-radius: 0;
+                border-bottom-right-radius: 0;
+                box-shadow: 0px 0px 11.12px 0px #0000000F;  
+                
+                @include respond-to(750px){
+                    display: flex;
                 }
             }
 
@@ -702,6 +781,11 @@
             }
            }
 
+           
+           @include respond-to(750px){
+            display: none;
+        }
+
         }
 
 
@@ -723,7 +807,7 @@
         @include display(space-between,center,column);
         width: 100%;
         gap: 2.5rem;
-        margin-top: 12rem;
+        margin-top: 8.5rem;
 
         .review-section-1{
             @include display(space-between,center,column);
@@ -764,8 +848,17 @@
                 flex-wrap: wrap;
             };
 
+
              column-gap: 1.5rem;
              row-gap: .5rem;
+
+             @include respond-to(750px){
+                @include display(center,center,row);
+                position: relative;
+                overflow: hidden;
+                flex-wrap: nowrap;
+                gap: 0rem;
+            }
 
 
 
@@ -785,6 +878,21 @@
                 @include respond-to(900px){
                     width: 40%;
                 }
+
+                @include respond-to(750px){
+                    width: 300px;
+                    flex-shrink: 0;
+                    transform: translate(168px,0);
+                    margin: 0 1rem;
+                    &:nth-of-type(1){
+                        margin: 0 0 0 1rem;
+                    }
+
+                    &:nth-of-type(6){
+                        margin: 0 1rem 0 0;
+                    }
+                }
+
 
 
                 & > div{
@@ -825,6 +933,10 @@
                     @include respond-to(900px){
                         width: 75%;
                     }
+
+                    @include respond-to(750px){
+                        width: 85%;
+                    }
                     
                 }
 
@@ -842,6 +954,10 @@
 
                     @include respond-to(900px){
                         width: 75%;
+                    }
+
+                    @include respond-to(750px){
+                        width: 85%;
                     }
                 }
 
@@ -927,7 +1043,21 @@
         }
 
         @include respond-to(750px){
-            padding: 0 1rem;
+            padding: 0 1.5rem;
+        }
+
+        
+        @include respond-to(700px){
+
+            padding: 0 2rem;
+
+        }
+
+                
+        @include respond-to(550px){
+
+            padding: 0 .5rem;
+
         }
 
         
@@ -952,6 +1082,9 @@
                     width: 30%;
                     height: 1px;
                     background-color: $bag-light-footer-1;
+                    @include respond-to(700px){
+                        flex-grow: 1;
+                    }
                 }
 
             }
@@ -962,9 +1095,22 @@
                 width: 100%;
                 @include display(space-between,center,row);
 
+                @include respond-to(700px){
+
+                    @include display(space-between,flex-start,column);
+                    gap: 2rem;
+
+                }
+
                 .footer-def-right{
                     @include display(space-between,flex-start,column);
                     gap: 1.5rem;
+
+                    @include respond-to(700px){
+                        display: none;
+                    }
+
+
 
 
                      div{
@@ -997,11 +1143,20 @@
                     @include display(space-between,flex-end,column);
                     gap: 1.2rem;
 
+                    @include respond-to(700px){
+
+                        @include display(space-between,flex-start,column);
+    
+                    }
+
                     h5{
                         width: 70%;
                         font-size: 16px;
                         font-weight: 700;
                         color: $font-color-footer-3;
+                        @include respond-to(700px){
+                            width: 84%;
+                        }
                     }
 
 
@@ -1011,6 +1166,9 @@
                         color: $font-color-footer-3;
                         line-height: 24px;
                         width: 70%;
+                        @include respond-to(700px){
+                            width: 84%;
+                        }
                     }
 
 
@@ -1043,10 +1201,129 @@
                             &:hover{
                                 cursor: pointer;
                             }
+
+                            @include respond-to(800px){
+
+                                width: 60px;
+                                height: 36px;
+            
+                            }
+
+                            
+                            @include respond-to(700px){
+
+                                width: 65px;
+                                height: 36px;
+            
+                            }
+
                         }
+
+                        @include respond-to(700px){
+                            width: 84%;
+                        }
+
                     }
                     
                 }
+
+
+                .footer-def-responsiv{
+                    display: none;
+
+                    @include respond-to(700px){
+                        width: 100%;
+                        @include display(space-between,center,row);
+                        gap: 1rem;
+
+
+                        .footer-def-responsiv-right{
+                            width:50%;
+
+                            .footer-def-responsiv-right-span{
+                                @include display(space-between,center,column);
+                                width: 100%;
+                                padding: 2.5rem 1rem;
+                                gap: 1.5rem;
+                                background-color: $bag-color-footer-3;
+                                border: 1px solid $border-color-footer-1;
+                                border-radius: 16px;
+
+                                div{
+                                    width: 50px;
+                                    height: 50px;
+                                    background-color: $bag-color-footer-4;
+                                    border-radius: 50%;
+                                    background-image: url('../images/location.svg');
+                                    background-repeat: no-repeat;
+                                    background-size: 20px 20px;
+                                    background-position: center center;
+                                }
+
+                                p{
+                                    text-align: center;
+                                    font-weight: 400;
+                                    font-size: 14px;
+                                    line-height: 16px;
+                                }
+
+                            }
+                        }
+
+                        .footer-def-responsiv-left{
+                            width: 50%;
+                            @include display(space-between,center,column);
+                            gap: 1rem;
+
+                            .footer-def-responsiv-left-span{
+                                width: 100%;
+                                @include display(center,center,row);
+                                gap: 1rem;
+                                padding: 1rem 1rem;
+                                background-color: $bag-color-footer-3;
+                                border: 1px solid $border-color-footer-1;
+                                border-radius: 16px;
+
+                                @include respond-to(503px){
+                                    padding: 1.2rem 1rem;
+                                }
+
+                                
+                                @include respond-to(402px){
+                                    padding: 1.5rem 1rem;
+                                }
+
+                                div{
+                                    width: 50px;
+                                    height: 50px;
+                                    background-color: $bag-color-footer-4;
+                                    border-radius: 50%;
+                                    background-repeat: no-repeat;
+                                    background-size: 20px 20px;
+                                    background-position: center center;
+                                }
+
+                                .footer-def-responsiv-left-span-1{
+                                    background-image: url('../images/call-blue.svg');
+                                }
+
+                                .footer-def-responsiv-left-span-2{
+                                    background-image: url('../images/telephone.svg');
+                                }
+
+                                p{
+                                    font-weight: 400;
+                                    font-size: 14px;
+                                    line-height: 16px;
+                                }
+                            }
+                        }
+
+                    }
+                }
+
+
+
             }
 
 
@@ -1057,6 +1334,7 @@
                     font-size: 14px;
                     font-weight: 400;
                     color: $font-color-footer-4;
+                    text-align: center;
                 }
             }
         }
