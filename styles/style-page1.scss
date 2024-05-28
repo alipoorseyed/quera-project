@@ -109,8 +109,8 @@
             }
 
             .them{
-                width: 2.6rem;
-                height: 2.6rem;
+                width: 2.9rem;
+                height: 2.9rem;
                 border: 1px solid $border-color-head1;
                 border-radius: 3px;
                 background-image: url('../images/light-dark.svg');
@@ -124,8 +124,8 @@
                 }
 
                 @include respond-to(970px){
-                    width: 2.4rem;
-                    height: 2.4rem;
+                    width: 2.7rem;
+                    height: 2.7rem;
                     background-size: 1.4rem 1.4rem;
                 }
                 
@@ -143,6 +143,7 @@
                 @include display(space-between,flex-start,column){
                     display: none;
                 };
+                z-index: 51;
                 background-color: white;
                 width: 100%;
                 padding: 1rem 1.5rem;
@@ -292,8 +293,13 @@
         }
 
 
-        @include respond-to(1100px){
-            padding: 0 6rem;
+        @include respond-to(1120px){
+            padding: 0 5rem;
+        }
+
+        
+        @include respond-to(1034px){
+            padding: 0 4.5rem;
         }
 
         
@@ -312,6 +318,236 @@
         @include respond-to(550px){
             padding: 0 0.5rem;
         }
+
+        position: relative;
+        z-index: 8;
+        overflow: hidden;
+
+        .circule-1{
+            width: 452px;
+            height: 452px;
+            border-radius: 50%;
+            position: absolute;
+            left: 4vw;
+            top: 50px;
+            background: linear-gradient(0deg, rgba(239, 235, 255, 0) 29.95%, #E0EDFF 78.88%);
+            box-shadow: -3px 4px 16px 0px #00000000;
+            z-index: -20;
+
+            @include respond-to(1200px){
+                width: 400px;
+                height: 400px;
+                left: 1vw;
+            }
+
+
+            @include respond-to(1000px){
+                width: 350px;
+                height: 350px;
+                left: -2vw;
+            }
+
+            
+            @include respond-to(850px){
+                width: 350px;
+                height: 350px;
+                left: -12vw;
+            }
+
+                        
+            @include respond-to(700px){
+                width: 300px;
+                height: 300px;
+                left: -22vw;
+            }
+
+
+            @include respond-to(500px){
+                width: 250px;
+                height: 250px;
+                left: -30vw;
+            }
+
+            @include respond-to(400px){
+                width: 228px;
+                height: 228px;
+                left: -40vw;
+            }
+        }
+
+        
+        .circule-2{
+            width: 452px;
+            height: 452px;
+            border-radius: 50%;
+            position: absolute;
+            right:  -5vw;
+            top: 160px;
+            background: linear-gradient(0deg, rgba(239, 235, 255, 0) 29.95%, #E0EDFF 78.88%);
+            box-shadow: -3px 4px 16px 0px #00000000;
+            z-index: -20;
+
+            @include respond-to(1200px){
+                width: 400px;
+                height: 400px;
+                right: -7vw;
+            }
+
+
+            @include respond-to(1000px){
+                width: 350px;
+                height: 350px;
+                right: -12vw;
+            }
+
+            
+            @include respond-to(850px){
+                width: 350px;
+                height: 350px;
+                right: -18vw;
+            }
+
+                        
+            @include respond-to(700px){
+                width: 300px;
+                height: 300px;
+                right: -30vw;
+            }
+
+
+            @include respond-to(500px){
+                width: 250px;
+                height: 250px;
+                right: -36vw;
+            }
+
+            @include respond-to(400px){
+                width: 228px;
+                height: 228px;
+                right: -46vw;
+            }
+        }
+
+
+        .circule-3{
+            width: 452px;
+            height: 452px;
+            border-radius: 50%;
+            position: absolute;
+            left:  -5vw;
+            top: 1660px;
+            background: linear-gradient(0deg, rgba(239, 235, 255, 0) 29.95%, #E0EDFF 78.88%);
+            box-shadow: -3px 4px 16px 0px #00000000;
+            z-index: -20;
+
+            @include respond-to(1200px){
+                width: 400px;
+                height: 400px;
+                top: 1560px;
+                left: -7vw;
+            }
+
+
+            @include respond-to(1000px){
+                width: 350px;
+                height: 350px;
+                top: 1500px;
+                left: -12vw;
+            }
+
+            
+            @include respond-to(850px){
+                width: 350px;
+                height: 350px;
+                left: -18vw;
+            }
+
+                        
+            @include respond-to(700px){
+                width: 300px;
+                height: 300px;
+                left: -25vw;
+            }
+
+
+            @include respond-to(500px){
+                width: 250px;
+                height: 250px;
+                top: 1500px;
+                left: -20vw;
+            }
+
+            @include respond-to(400px){
+                width: 228px;
+                height: 228px;
+                top: 1550px;
+                left: -30vw;
+            }
+        }
+
+
+
+
+
+        
+        .circule-4{
+            width: 452px;
+            height: 452px;
+            border-radius: 50%;
+            position: absolute;
+            right:  -18vw;
+            top: 1230px;
+            background: linear-gradient(0deg, rgba(239, 235, 255, 0) 29.95%, #E0EDFF 78.88%);
+            box-shadow: -3px 4px 16px 0px #00000000;
+            z-index: -20;
+
+            @include respond-to(1200px){
+                width: 400px;
+                height: 400px;
+                top: 1230px;
+                right: -25vw;
+            }
+
+
+            @include respond-to(1000px){
+                width: 350px;
+                height: 350px;
+                top: 1200px;
+                right: -20vw;
+            }
+
+            
+            @include respond-to(850px){
+                width: 350px;
+                height: 350px;
+                right: -24vw;
+            }
+
+                        
+            @include respond-to(700px){
+                width: 300px;
+                height: 300px;
+                right: -25vw;
+            }
+
+
+            @include respond-to(500px){
+                width: 250px;
+                height: 250px;
+                top: 1200px;
+                right: -26vw;
+            }
+
+            @include respond-to(400px){
+                width: 228px;
+                height: 228px;
+                top: 1200px;
+                right: -24vw;
+            }
+        }
+        
+
+        
     }
 
 
@@ -320,7 +556,7 @@
         @include display(space-between,center,column);
         padding: 6rem 8rem 3rem 8rem;
         gap: 1.5rem;
-
+        
         @include respond-to(1200px){
             padding: 6rem 6.5rem 3rem 6.5rem;
         }
@@ -342,9 +578,11 @@
             padding: 6rem 1rem 3rem 1rem;
         }
 
-        @include respond-to(365px){
+        @include respond-to(390px){
             padding: 6rem .3rem 3rem .3rem;
         }
+
+
 
 
         h3:nth-of-type(1){
@@ -383,6 +621,11 @@
             @include respond-to(550px){
                 font-size: 36px;
             }
+
+            @include respond-to(351px){
+                font-size: 32px;
+            }
+
         }
          
         .vectorr{
@@ -397,12 +640,12 @@
             }
 
             @include respond-to(750px){
-                width: 8.5rem;
+                width: 9rem;
             }
 
             
         @include respond-to(550px){
-            width: 7rem;
+            width: 7.5rem;
           }
 
         }
@@ -553,6 +796,7 @@
                 width: 80%;
             }
 
+
             @include respond-to(750px){
                 width: 90%;
             }
@@ -575,9 +819,11 @@
                 gap: 1.3rem;
                 
 
-                @include respond-to(1200px){
+                @include respond-to(1220px){
                     padding: 2.2rem .8rem;
                 }
+
+                
 
                 @include respond-to(900px){
                     width: 40%;
@@ -601,14 +847,36 @@
                     font-weight:400 ;
                     font-size: 16px;
                     line-height: 26px;
+
+                    @include respond-to(1033px){
+                        font-size: 15px;
+                         }
+
+                         @include respond-to(900px){
+                            font-size: 16px;
+                             }
                  }
 
                  h4{
                     text-align: center;
                     font-weight:700 ;
                     font-size: 20px;
-                    @include respond-to(359px){
+
+                    @include respond-to(1033px){
+                        font-size: 17px;
+                         }
+
+                         @include respond-to(900px){
+                            font-size: 20px;
+                             }
+
+
+                    @include respond-to(411px){
                         font-size: 16px;
+                    }
+
+                    @include respond-to(351px){
+                        font-size: 14px;
                     }
                  }
         
@@ -825,6 +1093,11 @@
                 width: 55%;
             }
 
+            @include respond-to(550px){
+                width: 70%;
+            }
+        
+
             h3{
                 font-size: 40px;
                 font-weight: 700;
@@ -860,7 +1133,6 @@
 
              @include respond-to(750px){
                 @include display(center,center,row);
-                position: relative;
                 overflow: hidden;
                 flex-wrap: nowrap;
                 gap: 0rem;
@@ -888,7 +1160,7 @@
                 @include respond-to(750px){
                     width: 300px;
                     flex-shrink: 0;
-                    transform: translate(168px,0);
+                    transform: translate(165px,0);
                     margin: 0 1rem;
                     &:nth-of-type(1){
                         margin: 0 0 0 1rem;
@@ -1161,7 +1433,7 @@
                         font-weight: 700;
                         color: $font-color-footer-3;
                         @include respond-to(700px){
-                            width: 84%;
+                            width: 86%;
                         }
                     }
 
@@ -1173,7 +1445,7 @@
                         line-height: 24px;
                         width: 70%;
                         @include respond-to(700px){
-                            width: 84%;
+                            width: 86%;
                         }
                     }
 
@@ -1226,7 +1498,7 @@
                         }
 
                         @include respond-to(700px){
-                            width: 84%;
+                            width: 86%;
                         }
 
                     }
@@ -1239,7 +1511,7 @@
 
                     @include respond-to(700px){
                         width: 100%;
-                        @include display(space-between,center,row);
+                        @include display(space-between,stretch,row);
                         gap: 1rem;
 
 
@@ -1255,12 +1527,13 @@
                                 border: 1px solid $border-color-footer-1;
                                 border-radius: 16px;
 
+
                                 div{
                                     width: 50px;
                                     height: 50px;
                                     background-color: $bag-color-footer-4;
                                     border-radius: 50%;
-                                    background-image: url('../images/location.svg');
+                                    background-image: url('../images/location-blue.svg');
                                     background-repeat: no-repeat;
                                     background-size: 20px 20px;
                                     background-position: center center;
@@ -1285,19 +1558,12 @@
                                 width: 100%;
                                 @include display(center,center,row);
                                 gap: 1rem;
+                                flex-grow: 1;
                                 padding: 1rem 1rem;
                                 background-color: $bag-color-footer-3;
                                 border: 1px solid $border-color-footer-1;
                                 border-radius: 16px;
 
-                                @include respond-to(503px){
-                                    padding: 1.2rem 1rem;
-                                }
-
-                                
-                                @include respond-to(402px){
-                                    padding: 1.5rem 1rem;
-                                }
 
                                 div{
                                     width: 50px;
