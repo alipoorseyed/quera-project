@@ -279,15 +279,24 @@
 
 
     main{
+        width: 100%;
         padding: 8rem 10rem;
 
 
         .span-main-div{
+            width: 100%;
             @include display(center,stretch,row);
             gap: 1.5rem;
 
             .span-main-div-right{
                 @include display(flex-start,flex-start,column);
+                gap: 1rem;
+                width: 40%;
+                padding: 2rem 2rem 4rem 2rem;
+                flex-grow: 1;
+                box-shadow: 0px 4px 63px 0px #00000008;
+                border: 1px solid #F5F6F8;
+                border-radius: 24px;
 
                 h2{
                     font-size: 40px;
@@ -309,6 +318,54 @@
                     text-align: right;
                 }
 
+            }
+
+
+            .span-main-div-left{
+                width: 40%;
+                flex-grow: 1;
+                @include display(space-between,center,column);
+                gap: 1.5rem;
+
+                img{
+                    flex-grow: 1;
+                    width: 100%;
+                    height: fit-content;
+                }
+
+                .propert-span{
+                    flex-grow: 1;
+                    width: 100%;
+                    @include display(center,center,row);
+                    gap: 1rem;
+                    box-shadow: 0px 4px 63px 0px #00000008;
+                    border: 1px solid #F5F6F8;
+                    border-radius: 24px;
+                    padding: 1rem 1rem;
+                    flex-wrap: wrap;
+
+                    div{
+                        width: 40%;
+                        flex-grow: 1;
+                        @include display(space-between,flex-start,column);
+                        gap: .5rem;
+                        padding: 1rem 1.8rem;
+                        background-color: #F9FAFB;
+                        border: 1px solid #F5F5F5;
+                        border-radius: 16px;
+                        h4{
+                            font-size: 32px;
+                            font-weight: 600;
+                            color: #070D31;
+                        }
+
+                        p{
+                            font-size: 18px;
+                            font-weight: 400;
+                            color: #707070;
+                        }
+                    }
+                }
             }
         }
     }

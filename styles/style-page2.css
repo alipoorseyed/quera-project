@@ -259,9 +259,11 @@
 }
 @media (max-width: 4000px) {
   main {
+    width: 100%;
     padding: 8rem 10rem;
   }
   main .span-main-div {
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: stretch;
@@ -273,6 +275,13 @@
     justify-content: flex-start;
     align-items: flex-start;
     flex-direction: column;
+    gap: 1rem;
+    width: 40%;
+    padding: 2rem 2rem 4rem 2rem;
+    flex-grow: 1;
+    box-shadow: 0px 4px 63px 0px rgba(0, 0, 0, 0.031372549);
+    border: 1px solid #F5F6F8;
+    border-radius: 24px;
   }
   main .span-main-div .span-main-div-right h2 {
     font-size: 40px;
@@ -290,6 +299,58 @@
     line-height: 30px;
     color: #444749;
     text-align: right;
+  }
+  main .span-main-div .span-main-div-left {
+    width: 40%;
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  main .span-main-div .span-main-div-left img {
+    flex-grow: 1;
+    width: 100%;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  main .span-main-div .span-main-div-left .propert-span {
+    flex-grow: 1;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 1rem;
+    box-shadow: 0px 4px 63px 0px rgba(0, 0, 0, 0.031372549);
+    border: 1px solid #F5F6F8;
+    border-radius: 24px;
+    padding: 1rem 1rem;
+    flex-wrap: wrap;
+  }
+  main .span-main-div .span-main-div-left .propert-span div {
+    width: 40%;
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 1rem 1.8rem;
+    background-color: #F9FAFB;
+    border: 1px solid #F5F5F5;
+    border-radius: 16px;
+  }
+  main .span-main-div .span-main-div-left .propert-span div h4 {
+    font-size: 32px;
+    font-weight: 600;
+    color: #070D31;
+  }
+  main .span-main-div .span-main-div-left .propert-span div p {
+    font-size: 18px;
+    font-weight: 400;
+    color: #707070;
   }
   footer {
     padding: 0 10rem;
