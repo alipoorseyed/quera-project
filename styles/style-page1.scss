@@ -20,6 +20,11 @@
     
     .span-div{
         width: 100%;
+
+
+        .burgure-menu-div{
+            
+        }
     }
 
 
@@ -1221,9 +1226,10 @@
 
              @include respond-to(750px){
                 @include display(center,center,row);
+                padding: 0rem .8rem;
                 overflow: hidden;
                 flex-wrap: nowrap;
-                gap: 0rem;
+                gap: 8rem;
             }
 
 
@@ -1245,19 +1251,9 @@
                     width: 40%;
                 }
 
-                @include respond-to(750px){
-                    width: 300px;
-                    flex-shrink: 0;
-                    transform: translate(165px,0);
-                    margin: 0 1rem;
-                    &:nth-of-type(1){
-                        margin: 0 0 0 1rem;
-                    }
-
-                    &:nth-of-type(6){
-                        margin: 0 1rem 0 0;
-                    }
-                }
+                // @include respond-to(750px){
+                //     flex-grow: 1;
+                // }
 
 
 
