@@ -1,4 +1,11 @@
 document.addEventListener("DOMContentLoaded", function () {
+  let burger_menu = document.getElementById("burgure-menu");
+  let burger_menu_div = document.getElementsByClassName("burgure-menu-div")[0];
+  let burgure_menu_div_close = document.getElementsByClassName("burgure-menu-div-close")[0];
+
+
+
+
   let review = document.getElementsByClassName("review-section-2")[0];
   let review_sp = Array.from(document.getElementsByClassName("review-section-2-span"));
   let div_wrapper = document.createElement("div");
@@ -63,6 +70,26 @@ document.addEventListener("DOMContentLoaded", function () {
 
   window.addEventListener("resize", handleResize);
   handleResize(); // Initial check on page load
+
+
+
+burger_menu.addEventListener("click",burger_menu_function);
+function burger_menu_function(){
+  burger_menu_div.classList.add("show-menu");
+  document.querySelector("header").style.opacity = ".6";
+  document.querySelector("main").style.opacity = ".6";
+  document.querySelector("footer").style.opacity = ".6";
+}
+
+
+burgure_menu_div_close.addEventListener("click",close_menu_function);
+function close_menu_function(){
+  burger_menu_div.classList.remove("show-menu");
+  document.querySelector("header").style.opacity = "1";
+  document.querySelector("main").style.opacity = "1";
+  document.querySelector("footer").style.opacity = "1";
+}
+
 
 
 

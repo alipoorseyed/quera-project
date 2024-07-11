@@ -20,10 +20,50 @@
     
     .span-div{
         width: 100%;
-
-
         .burgure-menu-div{
-            
+                @include display(flex-start,flex-start,column);
+                gap: 3rem;
+                width: 300px;
+                height: 100vh;
+                position: fixed;
+                top: 0;
+                right: -300px;
+                z-index: 5000;
+                background-color: #FFFFFF;
+                padding: 2rem 2rem;
+
+                transition: all .4s ease-in-out;
+
+            & > img{
+                width: 30px;
+                height: 30px;
+
+                &:hover{
+                    cursor: pointer;
+                }
+            }
+
+
+            .burgure-menu-div-def{
+                @include display(flex-start,flex-start,column);
+                gap: 1.5rem;
+            }
+
+
+            .burgure-menu-div-them{
+                @include display(flex-start,center,row);
+                gap: .8rem;
+
+
+                img{
+                    width: 10px;
+                    height: 10px;
+                }
+
+                &:hover{
+                    cursor: pointer;
+                }
+            }
         }
     }
 
@@ -82,7 +122,12 @@
                 display: flex;
                 position: absolute;
                 right: 0;
+
+                &:hover{
+                    cursor: pointer;
+                }
             }
+
             
         }
 
@@ -910,6 +955,7 @@
                 background-color: $bag-light-main-3;
                 box-shadow: 0px 4px 63px 0px #00000008;
                 gap: 1.3rem;
+                transition: all .3s ease;
                 
 
                 @include respond-to(1220px){
@@ -931,6 +977,7 @@
 
                 &:hover{
                     cursor: pointer;
+                    transform: scale(1.04);
                 }
 
 
@@ -1229,7 +1276,6 @@
                 padding: 0rem .8rem;
                 overflow: hidden;
                 flex-wrap: nowrap;
-                gap: 8rem;
             }
 
 
@@ -1250,10 +1296,6 @@
                 @include respond-to(900px){
                     width: 40%;
                 }
-
-                // @include respond-to(750px){
-                //     flex-grow: 1;
-                // }
 
 
 
@@ -1703,9 +1745,12 @@
 
 
 
-
-
-
     
     
 }
+
+.show-menu{
+    right:0px !important;
+}
+
+

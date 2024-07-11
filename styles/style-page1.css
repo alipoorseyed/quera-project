@@ -15,6 +15,50 @@
   .span-div {
     width: 100%;
   }
+  .span-div .burgure-menu-div {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 3rem;
+    width: 300px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: -300px;
+    z-index: 5000;
+    background-color: #FFFFFF;
+    padding: 2rem 2rem;
+    transition: all 0.4s ease-in-out;
+  }
+  .span-div .burgure-menu-div > img {
+    width: 30px;
+    height: 30px;
+  }
+  .span-div .burgure-menu-div > img:hover {
+    cursor: pointer;
+  }
+  .span-div .burgure-menu-div .burgure-menu-div-def {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  .span-div .burgure-menu-div .burgure-menu-div-them {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    gap: 0.8rem;
+  }
+  .span-div .burgure-menu-div .burgure-menu-div-them img {
+    width: 10px;
+    height: 10px;
+  }
+  .span-div .burgure-menu-div .burgure-menu-div-them:hover {
+    cursor: pointer;
+  }
   header {
     width: 100%;
     padding: 1.5rem 6.5rem;
@@ -69,6 +113,9 @@
     display: flex;
     position: absolute;
     right: 0;
+  }
+  .head img:hover {
+    cursor: pointer;
   }
 }
 @media (max-width: 4000px) {
@@ -916,6 +963,7 @@
     background-color: #FFFFFF;
     box-shadow: 0px 4px 63px 0px rgba(0, 0, 0, 0.031372549);
     gap: 1.3rem;
+    transition: all 0.3s ease;
   }
 }
 @media (max-width: 4000px) and (max-width: 1220px) {
@@ -937,6 +985,7 @@
 @media (max-width: 4000px) {
   .property .property-list > div:hover {
     cursor: pointer;
+    transform: scale(1.04);
   }
   .property .property-list > div p {
     width: 80%;
@@ -1228,7 +1277,6 @@
     padding: 0rem 0.8rem;
     overflow: hidden;
     flex-wrap: nowrap;
-    gap: 8rem;
   }
 }
 @media (max-width: 4000px) {
@@ -1668,4 +1716,7 @@
     color: #666666;
     text-align: center;
   }
+}
+.show-menu {
+  right: 0px !important;
 }/*# sourceMappingURL=style-page1.css.map */
