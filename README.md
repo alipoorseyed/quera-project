@@ -1,12 +1,12 @@
 # Portfolio Project
 simple project for quera-bootcamp
-## Features
+## Features ✨
 
 - Responsive Design
 - Swaper for comments
 - Burgure Menu
 
-## Technologies Used
+## Technologies Used 💻
 
 - Html
 - Scss for styles
